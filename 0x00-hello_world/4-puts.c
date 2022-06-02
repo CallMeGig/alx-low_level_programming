@@ -2,7 +2,7 @@
 
 /**
  * main - print message to screen
- * return - 0
+ * Return: 0
  */
 
 int main(void)

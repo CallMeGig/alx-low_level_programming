@@ -30,7 +30,11 @@ int main(void)
 						putchar(48 + o);
 						putchar(48 + p);
 					}
-					if (!(n + m + o + p == 35 && n == 9))
+					if (n + m + o + p == 35 && n == 9)
+					{
+						putchar('\n');
+					}
+					else
 					{
 						putchar(',');
 						putchar(' ');
@@ -43,7 +47,5 @@ int main(void)
 		}
 		n++;
 	}
-	putchar('\n');
-
 	return (0);
 }

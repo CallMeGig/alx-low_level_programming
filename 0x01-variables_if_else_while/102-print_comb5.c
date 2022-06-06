@@ -29,15 +29,15 @@ int main(void)
 						putchar(32);
 						putchar(48 + o);
 						putchar(48 + p);
-					}
-					if (n + m + o + p == 35 && n == 9)
-					{
-						putchar('\n');
-					}
-					else
-					{
-						putchar(',');
-						putchar(' ');
+						if (n + m + o + p == 35 && n == 9)
+						{
+							putchar('\n');
+						}
+						else
+						{
+							putchar(',');
+							putchar(' ');
+                                        	}
 					}
 					p++;
 				}

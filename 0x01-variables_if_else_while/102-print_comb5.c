@@ -9,9 +9,7 @@
 int main(void)
 {
 	int n = 0;
-	int m;
-	int o;
-	int p;
+	int m, o, p;
 
 	while (n < 10)
 	{
@@ -24,7 +22,7 @@ int main(void)
 				p = 0;
 				while (p < 10)
 				{
-					if ((o * 10 + n * 1000 + m * 100 + p) 
+					if ((o * 10 + n * 1000 + m * 100 + p)
 							<= 9899)
 					{
 						putchar(48 + n);
@@ -33,7 +31,7 @@ int main(void)
 						putchar(48 + o);
 						putchar(48 + p);
 					}
-					if ((o * 10 + n * 1000 + m * 100 + p) 
+					if ((o * 10 + n * 1000 + m * 100 + p)
 							< 9899)
 					{
 						putchar(44);
@@ -47,7 +45,6 @@ int main(void)
 		}
 		n++;
 	}
-
 	putchar('\n');
 	return (0);
 }

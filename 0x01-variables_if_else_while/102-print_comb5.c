@@ -22,7 +22,7 @@ int main(void)
 				p = 0;
 				while (p < 10)
 				{
-					if ((n <= o) && (m < p) || n < o)
+					if (((n <= o) && (m < p)) || n < o)
 					{
 						putchar(48 + n);
 						putchar(48 + m);

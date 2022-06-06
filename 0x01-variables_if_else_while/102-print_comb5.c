@@ -19,7 +19,7 @@ int main(void)
 			o = 0;
 			while (o < 10)
 			{
-				p = 0;
+				p = m + 1;
 				while (p < 10)
 				{
 					if (((n + m) < (o + p) && o >= n) || n > o)

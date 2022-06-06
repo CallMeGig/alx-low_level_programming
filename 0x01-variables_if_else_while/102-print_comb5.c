@@ -9,7 +9,9 @@
 int main(void)
 {
 	int n = 0;
-	int m, o, p;
+	int m;
+	int o;
+	int p;
 
 	while (n < 10)
 	{
@@ -22,19 +24,24 @@ int main(void)
 				p = 0;
 				while (p < 10)
 				{
-					if (((n + m) < (o + p) && o >= n) || n > o)
+					if ((n <= o) && (m < p) || n < o)
 					{
 						putchar(48 + n);
 						putchar(48 + m);
 						putchar(32);
 						putchar(48 + o);
 						putchar(48 + p);
-						if (!(n + m + o + p == 227 && n == 57))
+						if (!(n + m + o + p == 35 && n == 9))
 						{
-							putchar(44);
-							putchar(32);
+							putchar(',');
+							putchar(' ');
 						}
 					}
+					/*if ()
+					{
+						putchar(',');
+						putchar(' ');
+					}*/
 					p++;
 				}
 				o++;
@@ -43,6 +50,8 @@ int main(void)
 		}
 		n++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }

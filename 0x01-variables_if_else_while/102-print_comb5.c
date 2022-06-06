@@ -26,11 +26,11 @@ int main(void)
 				{
 					if (!(f == c && e == d))
 					{
-						putchar('0' + f);
-						putchar('0' + e);
+						putchar(48 + f);
+						putchar(48 + e);
 						putchar(' ');
-						putchar('0' + d);
-						putchar('0' + c);
+						putchar(48 + d);
+						putchar(48 + c);
 						if (!(f + e == 18 && c + d == 17 && d == 9))
 						{
 							putchar(',');

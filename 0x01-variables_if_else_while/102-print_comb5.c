@@ -22,20 +22,19 @@ int main(void)
 				p = 0;
 				while (p < 10)
 				{
-					if ((o * 10 + n * 1000 + m * 100 + p)
-							<= 9899)
+					if ((n + m) < (o + p) && o >= n)
 					{
 						putchar(48 + n);
 						putchar(48 + m);
 						putchar(32);
 						putchar(48 + o);
 						putchar(48 + p);
-					}
-					if ((o * 10 + n * 1000 + m * 100 + p)
-							< 9899)
-					{
-						putchar(44);
-						putchar(32);
+						if ((o * 10 + n * 1000 + m * 100 + p)
+								< 9899)
+						{
+							putchar(44);
+							putchar(32);
+						}
 					}
 					p++;
 				}

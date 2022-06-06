@@ -23,7 +23,7 @@ int main(void)
 				putchar(48 + n);
 				putchar(48 + m);
 				putchar(48 + o);
-				if ((o * 100 + n * 10 + m) != 789)
+				if ((o + n * 100 + m * 10) != 789)
 				{
 					putchar(',');
 					putchar(' ');

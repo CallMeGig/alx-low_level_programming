@@ -24,7 +24,8 @@ int main(void)
 				p = 0;
 				while (p < 10)
 				{
-					if ((o * 10 + n * 1000 + m * 100 + p) <= 9899)
+					if ((o * 10 + n * 1000 + m * 100 + p) 
+							<= 9899)
 					{
 						putchar(48 + n);
 						putchar(48 + m);
@@ -32,7 +33,8 @@ int main(void)
 						putchar(48 + o);
 						putchar(48 + p);
 					}
-					if ((o * 10 + n * 1000 + m * 100 + p) < 9899)
+					if ((o * 10 + n * 1000 + m * 100 + p) 
+							< 9899)
 					{
 						putchar(44);
 						putchar(32);

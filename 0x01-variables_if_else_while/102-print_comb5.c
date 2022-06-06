@@ -19,7 +19,7 @@ int main(void)
 			o = 0;
 			while (o < 10)
 			{
-				p = o + 1;
+				p = 0;
 				while (p < 10)
 				{
 					if (((n + m) < (o + p) && o >= n) || n > o)
@@ -29,8 +29,7 @@ int main(void)
 						putchar(32);
 						putchar(48 + o);
 						putchar(48 + p);
-						if ((o * 10 + n * 1000 + m * 100 + p)
-								< 9899)
+						if (!(n + m + o + p == 227 && n == 57))
 						{
 							putchar(44);
 							putchar(32);

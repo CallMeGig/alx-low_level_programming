@@ -8,11 +8,9 @@
 
 int main(void)
 {
-	int n = 0;
-	int m;
-	int o;
-	int p;
+	int n, m, o, p;
 
+	n = 0;
 	while (n < 10)
 	{
 		m = 0;
@@ -31,17 +29,12 @@ int main(void)
 						putchar(32);
 						putchar(48 + o);
 						putchar(48 + p);
-						if (!(n + m + o + p == 35 && n == 9))
-						{
-							putchar(',');
-							putchar(' ');
-						}
 					}
-					/*if ()
+					if (!(n + m + o + p == 35 && n == 9))
 					{
 						putchar(',');
 						putchar(' ');
-					}*/
+					}
 					p++;
 				}
 				o++;
@@ -50,7 +43,6 @@ int main(void)
 		}
 		n++;
 	}
-
 	putchar('\n');
 
 	return (0);

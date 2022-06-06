@@ -28,14 +28,14 @@ int main(void)
 					{
 						putchar(48 + n);
 						putchar(48 + m);
-						putchar(' ');
+						putchar(32);
 						putchar(48 + o);
 						putchar(48 + p);
 					}
 					if ((o * 10 + n * 1000 + m * 100 + p) < 9899)
 					{
-						putchar(',');
-						putchar(' ');
+						putchar(44);
+						putchar(32);
 					}
 					p++;
 				}
@@ -47,6 +47,5 @@ int main(void)
 	}
 
 	putchar('\n');
-
 	return (0);
 }

@@ -8,8 +8,7 @@
 
 int main(void)
 {
-	int n, m, o, p;
-
+	int n, m, o, p, total;
 	n = 0;
 	while (n < 10)
 	{
@@ -29,8 +28,9 @@ int main(void)
 						putchar(32);
 						putchar(48 + o);
 						putchar(48 + p);
+						total = n + m + o + p;
 					}
-					if ((((n <= o) && (m < p)) || n < o))
+					if (!(total == 35) && (((n <= o) && (m < p)) || n < o))
 					{
 						putchar(',');
 						putchar(' ');

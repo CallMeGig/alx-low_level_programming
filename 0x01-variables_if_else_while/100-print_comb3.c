@@ -21,10 +21,10 @@ int main(void)
 			if ((n * 10 + m) != 89)
 			{
 				putchar(',');
-                        	putchar(' ');
+				putchar(' ');
 			}
 			m++;
-		}		
+		}
 		n++;
 	}
 

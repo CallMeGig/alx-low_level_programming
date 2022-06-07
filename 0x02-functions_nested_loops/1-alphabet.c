@@ -12,8 +12,8 @@ void print_alphabet(void)
 
 	while (i < 26)
 	{
-		putchar(48 + i);
+		_putchar(48 + i);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 }

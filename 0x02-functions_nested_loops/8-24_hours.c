@@ -9,7 +9,7 @@
 
 void jack_bauer(void)
 {
-	int n, m, o, p, total;
+	int n, m, o, p;
 
 	n = 0;
 	while (n < 3)

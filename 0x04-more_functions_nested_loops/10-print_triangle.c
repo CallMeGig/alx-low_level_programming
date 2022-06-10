@@ -5,7 +5,7 @@
  * @size: size of base and height of triangle
  */
 
-void print_triangle(int size);
+void print_triangle(int size)
 {
 	int i = 0;
 

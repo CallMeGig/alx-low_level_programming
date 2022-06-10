@@ -8,6 +8,8 @@
 
 void print_numbers(void)
 {
+	int i;
+
 	while (i < 10)
 	{
 		_putchar(48 + i);

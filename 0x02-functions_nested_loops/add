@@ -1,0 +1,7 @@
+#!/bin/bash
+if [$2]
+then
+	git add $1-$2;git commit -m "Added $2 file";git push
+else
+	git add $1;git commit -m "Added $1 file";git push
+fi

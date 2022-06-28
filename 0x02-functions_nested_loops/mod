@@ -1,0 +1,12 @@
+#!/bin/bash
+if [$3]
+then
+	git add $1-$2;git commit -m "Modified $2 file
+	
+	$3";git push
+elif [$2]
+then
+	git add $1-$2;git commit -m "Modified $2 file";git push
+else
+	git add $1;git commit -m "Modified $1 file";git push
+fi

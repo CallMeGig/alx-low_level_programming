@@ -1,4 +1,3 @@
-??? from here until ???END lines may have been inserted/deleted
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
